@@ -39,7 +39,7 @@
             <tbody>
                 <tr>
                     <td class="esd-email-paddings" valign="top">
-                        <table cellpadding="0" cellspacing="0" class="es-content esd-header-popover" align="center">
+                        <table cellpadding="0" cellspacing="0" class="es-content esd-header-popover es-mobile-hidden" align="center">
                             <tbody>
                                 <tr>
                                     <td class="esd-stripe" align="center" background="https://demo.stripocdn.email/content/guids/videoImgGuid/images/whatsapp_image_20240412_at_122815am.jpeg" style="background-image: url(https://demo.stripocdn.email/content/guids/videoImgGuid/images/whatsapp_image_20240412_at_122815am.jpeg); background-repeat: no-repeat; background-position: center top;">
@@ -136,8 +136,47 @@
                                     <td class="esd-stripe" align="center">
                                         <table class="es-content-body" style="border-left:1px solid #F4CBB9;border-right:1px solid #F4CBB9;border-top:1px solid #F4CBB9;background-color: #ffffff;" width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center">
                                             <tbody>
+                                                <!--[if !mso]><!-- -->
+                                                <tr class="es-desk-hidden">
+                                                    <td class="esd-structure es-p40t es-p20b es-p40r es-p40l" align="left">
+                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="518" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%" background="https://tlr.stripocdn.email/content/guids/CABINET_3c616dc5e0465fef7cdda45e7e52d6ed/images/rectangle_44_X4X.png" style="border-left:1px solid #F4CBB9;border-right:1px solid #F4CBB9;border-top:1px solid #F4CBB9;border-bottom:1px solid #F4CBB9;background-image: url(https://tlr.stripocdn.email/content/guids/CABINET_3c616dc5e0465fef7cdda45e7e52d6ed/images/rectangle_44_X4X.png); background-repeat: no-repeat; background-position: left top;">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-text es-p10t es-p10b">
+                                                                                        <h1>Sandy & Emmanuel</h1>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-text es-p10t es-p10b">
+                                                                                        <h3 style="font-size: 30px; font-family: montserrat, helvetica, arial, sans-serif;">Estas cordialmente invitado a nuestra boda</h3>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td width="518" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://demo.stripocdn.email/content/guids/videoImgGuid/images/whatsapp_image_20240412_at_122815am_5Kt.jpeg" alt style="display: block;" width="518"></a></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <!--<![endif]-->
                                                 <tr>
-                                                    <td class="esd-structure es-p30t es-p40r es-p40l" align="left">
+                                                    <td class="esd-structure es-p5t es-p40r es-p40l" align="left">
                                                         <!--[if mso]><table width="518" cellpadding="0" cellspacing="0"><tr><td width="228" valign="top"><![endif]-->
                                                         <table cellpadding="0" cellspacing="0" class="es-left" align="left">
                                                             <tbody>
@@ -253,7 +292,7 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text">
-                                                                                        <p>La dirección del templo es:&nbsp;<br>C. Industria Eléctrica 99, Nueva Galicia, La Tijera, 45647 La Tijera, Jal.</p>
+                                                                                        <p><b>Misa: 05:00 pm</b>&nbsp;<br>La dirección del templo es:&nbsp;<br>C. Industria Eléctrica 99, Nueva Galicia, La Tijera, 45647 La Tijera, Jal.</p>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -277,7 +316,7 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text">
-                                                                                        <p>La dirección del casino:&nbsp;<br>"El Naranjo"&nbsp;<br>C. San Francisco 2, Los Cajetes, 45609 Zapopan, Jal.</p>
+                                                                                        <p><b>Evento: 06:30 pm</b>&nbsp;<br>La dirección del casino:&nbsp;<br>"El Naranjo"&nbsp;<br>C. San Francisco 2, Los Cajetes, 45609 Zapopan, Jal.</p>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -476,27 +515,21 @@
     <script>
         // Fecha objetivo: 17 de agosto de 2024
         const targetDate = new Date('2024-08-17');
-
         // Fecha actual
         const currentDate = new Date();
-
         // Calcula la diferencia en días
         const differenceInTime = targetDate.getTime() - currentDate.getTime();
         const differenceInDays = Math.ceil(differenceInTime / (1000 * 3600 * 24));
-
         // Actualiza el contenido del elemento <h2> con el resultado
         document.getElementById('countdown').textContent = `Solo faltan ${differenceInDays} días para el mejor día de nuestras vidas...`;
 
-        function openInGoogleMaps(direccion) 
-        {
-            if(direccion == 'templo')
-            {
+        function openInGoogleMaps(direccion) {
+            if (direccion == 'templo') {
                 var direccion = "C.+Industria+Eléctrica+99,+Nueva+Galicia,+La+Tijera,+45647+La+Tijera,+Jal.";
                 var url = "https://www.google.com/maps?q=" + direccion;
                 window.open(url, "_blank");
             }
-            else 
-            {
+            else {
                 var direccion = "El+Naranjo,+C.+San+Francisco+2,+Los+Cajetes,+45609+Zapopan,+Jal.";
                 var url = "https://www.google.com/maps?q=" + direccion;
                 window.open(url, "_blank");
